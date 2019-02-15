@@ -3,18 +3,45 @@
 var mantra = "Be the dev";
 
 // 1. Write the code that returns 'B' from mantra.
+function getB(str){
+    for (let i = 0; i < str.length; i++){
+        if (str.charAt[i] === 'B'){
+            return str[i];
+        }
+    }
+}
 
 // 2. Write the code that determines if there is a 'x' in mantra.
+function findX(str){
+    if (str.includes('x')){
+        return 'String contains x';
+    } else {
+        return 'String does not contain x';
+    }
+}
 
 // 3. Write the code that determines if there is a 'v' in mantra.
+function findV(str){
+    if (str.includes('v')){
+        return 'String contains v';
+    } else {
+        return 'String does not contain v';
+    }
+}
 
 // Stretch: Write the code that returns the position of 'v' in mantra.
-
+function findV(str){
+    if (str.includes('v')){
+        return str.indexOf('v');
+    } else {
+        return 'String does not contain v';
+    }
+}
 
 // Consider the following statement:
 
-var codingIsEasy
-var imBored
+var codingIsEasy = true;
+var imBored = true;
 
 if (codingIsEasy && imBored) {
     console.log("I need more!")
@@ -26,8 +53,8 @@ if (codingIsEasy && imBored) {
 
 // Consider the following statement:
 
-var imLost
-var imFrustrated
+var imLost = false;
+var imFrustrated = false;
 
 if (imLost || imFrustrated) {
     console.log('Break time!')
@@ -38,10 +65,20 @@ if (imLost || imFrustrated) {
 // 5. Update the imLost and imFrustated variables above the statement to the values required to log "Keep coding!"
 
 // 6a. Recall the mantra variable from the first question. Write the code that logs each letter of mantra using a for loop.
+for (let i = 0; i < mantra.length; i++){
+    console.log(mantra.charAt[i])
+}
 
 // Stretch: Using a while loop.
+let whileCounter = 0;
+while (whileCounter < mantra.length){
+    console.log(mantra.charAt[whileCounter]);
+}
 
 // Super Stretch: Using forEach().
+forEach (var item in mantra){
+    console.log(mantra.charAt[item]);
+}
 
 // Consider the following variable:
 
