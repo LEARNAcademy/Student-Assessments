@@ -5,41 +5,28 @@ var mantra = "Be the dev";
 // 1. Write the code that returns 'B' from mantra.
 
 function returnB(word) {
-    return word.substr(0,1)
+  return word.substr(0,1)
 }
-
-console.log(returnB(mantra))
+ console.log(returnB(mantra));
 
 // 2. Write the code that determines if there is a 'x' in mantra.
 
-function isThere(word) {
-    return word.includes("x")
+function findLet(word, letter) {
+  return word.includes(letter)
 }
-
-
-console.log(isThere(mantra))
+console.log(findLet(mantra, 'x'));
 
 // 3. Write the code that determines if there is a 'v' in mantra.
-
-function isThere2(word) {
-    return word.includes("v")
+function findLet(word, letter) {
+  return word.includes(letter)
 }
-
-console.log(isThere2(mantra))
-
+console.log(findLet(mantra, 'v'));
 
 // Stretch: Write the code that returns the position of 'v' in mantra.
-
-var placeForV = []
-
-for(var i = 0; i < mantra.length; i++) {
-    if (mantra[i] === "v") {
-        placeForV.push(i);
-    }
+function findPosLet(word, letter) {
+  return word.indexOf(letter)
 }
-
-console.log(placeForV)
-
+console.log(findPosLet(mantra, 'v'));
 
 // Consider the following statement:
 
