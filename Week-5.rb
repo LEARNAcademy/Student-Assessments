@@ -5,7 +5,9 @@
 #
 # takes 1 argument, a language code (e.g. "es", "de", "en")
 # returns "Hello, World" for the given language, for at least 3 languages. It should default to returning English.
-# Test the function for each of the supported languages
+#hello_world("es") should return "Hola Mundo"
+#hello_world("de") should return "Hallo Welt"
+
 
 
 # The Grade Assigner
@@ -13,7 +15,8 @@
 #
 # takes 1 argument, a number score.
 # returns a grade for the score, either "A", "B", "C", "D", or "F".
-# Test the function for a few different scores.
+# assign_grade(90) should return A
+# assign_grade(75) should return C
 
 
 # The Pluralizer
@@ -24,4 +27,5 @@
 # pluralizer(5, cat) should return "5 cats"
 # pluralizer(1, dog) should return "1 dog" because the number one does not require a plural noun
 # Arguments will always be a number and a singular noun.
+
 # Bonus: Make it handle a few collective nouns like "sheep", "geese", "children", "people" and "species".
